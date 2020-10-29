@@ -19,24 +19,14 @@ namespace TestMod
             MelonLogger.Msg("OnApplicationStart");
         }
 
-        public override void OnSceneWasLoaded(int buildindex) // Runs when a Scene has Loaded and is passed the Scene's Build Index.
+        public override void OnSceneWasLoaded(int buildindex, string sceneName) // Runs when a Scene has Loaded and is passed the Scene's Build Index and Name.
         {
-            MelonLogger.Msg("OnSceneWasLoaded: " + buildindex.ToString());
+            MelonLogger.Msg("OnSceneWasLoaded: " + buildindex.ToString() + " | " + sceneName);
         }
 
-        public override void OnSceneWasLoaded(string sceneName) // Runs when a Scene has Loaded and is passed the Scene's Name.
+        public override void OnSceneWasInitialized(int buildindex, string sceneName) // Runs when a Scene has Initialized and is passed the Scene's Build Index and Name.
         {
-            MelonLogger.Msg("OnSceneWasLoaded: " + sceneName);
-        }
-
-        public override void OnSceneWasInitialized(int buildindex) // Runs when a Scene has Initialized and is passed the Scene's Build Index.
-        {
-            MelonLogger.Msg("OnSceneWasInitialized: " + buildindex.ToString());
-        }
-
-        public override void OnSceneWasInitialized(string sceneName) // Runs when a Scene has Initialized and is passed the Scene's Name.
-        {
-            MelonLogger.Msg("OnSceneWasInitialized: " + sceneName);
+            MelonLogger.Msg("OnSceneWasInitialized: " + buildindex.ToString() + " | " + sceneName);
         }
 
         public override void OnUpdate() // Runs once per frame.
