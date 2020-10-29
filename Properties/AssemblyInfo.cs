@@ -10,7 +10,7 @@ using MelonLoader;
 [assembly: AssemblyVersion(TestMod.BuildInfo.Version)]
 [assembly: AssemblyFileVersion(TestMod.BuildInfo.Version)]
 [assembly: MelonInfo(typeof(TestMod.TestMod), TestMod.BuildInfo.Name, TestMod.BuildInfo.Version, TestMod.BuildInfo.Author, TestMod.BuildInfo.DownloadLink)]
-
+[assembly: MelonColor()]
 
 // Create and Setup a MelonGame to mark a Mod as Universal or Compatible with specific Games.
 // If no MelonGameAttribute is found or any of the Values for any MelonGame on the Mod is null or empty it will be assumed the Mod is Universal.

@@ -54,9 +54,9 @@ namespace TestMod
             MelonLogger.Msg("OnApplicationQuit");
         }
 
-        public override void OnPreferencesApplied() // Runs when Melon Preferences get saved.
+        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved to file.
         {
-            MelonLogger.Msg("OnPreferencesApplied");
+            MelonLogger.Msg("OnPreferencesSaved");
         }
 
         public override void VRChat_OnUiManagerInit() // Runs upon VRChat's UiManager Initialization. Only runs if the Melon is used in VRChat.
