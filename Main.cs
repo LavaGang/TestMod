@@ -63,5 +63,10 @@ namespace TestMod
         {
             MelonLogger.Msg("VRChat_OnUiManagerInit");
         }
+
+        public override void BONEWORKS_OnLoadingScreen() // Runs when BONEWORKS shows the Loading Screen. Only runs if the Melon is used in BONEWORKS.
+        {
+            MelonLogger.Msg("BONEWORKS_OnLoadingScreen");
+        }
     }
 }
