@@ -1,6 +1,6 @@
 ### GENERAL INFORMATION:
 
-- An Example of a Mod for [MelonLoader](https://github.com/LavaGang/MelonLoader).
+- An Example Mod for [MelonLoader](https://github.com/LavaGang/MelonLoader).
 
 ---
 
