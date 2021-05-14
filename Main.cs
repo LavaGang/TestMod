@@ -59,9 +59,9 @@ namespace TestMod
             MelonLogger.Msg("OnPreferencesSaved");
         }
 
-        public override void VRChat_OnUiManagerInit() // Runs upon VRChat's UiManager Initialization. Only runs if the Melon is used in VRChat.
+        public override void OnPreferencesLoaded() // Runs when Melon Preferences get loaded.
         {
-            MelonLogger.Msg("VRChat_OnUiManagerInit");
+            MelonLogger.Msg("OnPreferencesLoaded");
         }
 
         public override void BONEWORKS_OnLoadingScreen() // Runs when BONEWORKS shows the Loading Screen. Only runs if the Melon is used in BONEWORKS.
