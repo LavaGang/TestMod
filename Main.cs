@@ -19,6 +19,11 @@ namespace TestMod
             MelonLogger.Msg("OnApplicationStart");
         }
 
+        public override void OnApplicationLateStart() // Runs after OnApplicationStart.
+        {
+            MelonLogger.Msg("OnApplicationLateStart");
+        }
+
         public override void OnSceneWasLoaded(int buildindex, string sceneName) // Runs when a Scene has Loaded and is passed the Scene's Build Index and Name.
         {
             MelonLogger.Msg("OnSceneWasLoaded: " + buildindex.ToString() + " | " + sceneName);
