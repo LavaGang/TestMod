@@ -54,7 +54,7 @@ namespace TestMod
             MelonLogger.Msg("OnApplicationQuit");
         }
 
-        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved to file.
+        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved.
         {
             MelonLogger.Msg("OnPreferencesSaved");
         }
