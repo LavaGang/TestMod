@@ -14,12 +14,11 @@ namespace TestMod
 
     public class TestMod : MelonMod
     {
-        public override void OnApplicationStart() // Runs after Game Initialization.
-        {
+        public override void OnInitializeMelon() {
             MelonLogger.Msg("OnApplicationStart");
         }
 
-        public override void OnApplicationLateStart() // Runs after OnApplicationStart.
+        public override void OnLateInitializeMelon() // Runs after OnApplicationStart.
         {
             MelonLogger.Msg("OnApplicationLateStart");
         }
@@ -32,6 +31,10 @@ namespace TestMod
         public override void OnSceneWasInitialized(int buildindex, string sceneName) // Runs when a Scene has Initialized and is passed the Scene's Build Index and Name.
         {
             MelonLogger.Msg("OnSceneWasInitialized: " + buildindex.ToString() + " | " + sceneName);
+        }
+
+        public override void OnSceneWasUnloaded(int buildIndex, string sceneName) {
+            MelonLogger.Msg("OnSceneWasUnloaded: " + buildIndex.ToString() + " | " + sceneName);
         }
 
         public override void OnUpdate() // Runs once per frame.
@@ -67,11 +70,6 @@ namespace TestMod
         public override void OnPreferencesLoaded() // Runs when Melon Preferences get loaded.
         {
             MelonLogger.Msg("OnPreferencesLoaded");
-        }
-
-        public override void BONEWORKS_OnLoadingScreen() // Runs when BONEWORKS shows the Loading Screen. Only runs if the Melon is used in BONEWORKS.
-        {
-            MelonLogger.Msg("BONEWORKS_OnLoadingScreen");
         }
     }
 }
